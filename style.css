@@ -1,0 +1,395 @@
+@import url(https://fonts.googleapis.com/css?family=Tangerine);
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 1.4rem;
+  font-weight: 800;
+}
+
+h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+h5 {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #1d1d1d;
+}
+
+h6 {
+  color: #d8d8d8;
+}
+
+button {
+  font-size: 0.8rem;
+  font-weight: 700;
+  outline: none;
+  border: none;
+  background-color: #1d1d1d;
+  color: aliceblue;
+  padding: 13px 30px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background-color: #3a3833;
+}
+
+hr {
+  width: 30px;
+  height: 2px;
+  background-color: #fb774b;
+}
+
+.star {
+  padding: 10px 0;
+}
+
+.star i {
+  font-size: 0.8rem;
+  color: goldenrod;
+}
+
+.navbar {
+  font-size: 16px;
+  top: 0;
+  left: 0;
+  box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-light .navbar-nav .nav-link {
+  padding: 0 20px;
+  color: black;
+  transition: 0.3s ease;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar i:hover,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar i:active {
+  color: coral;
+}
+
+.navbar i {
+  font-size: 1.2rem;
+  padding: 0 7px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+#beranda {
+  background-image: url("img/banner.jpg");
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: top 60px center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+#beranda span {
+  color: rgb(125, 10, 17);
+}
+
+#beranda .as {
+  color: white;
+}
+
+#baru .one img {
+  width: 100%;
+  height: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+#baru .one .details {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transition: 0.3s ease;
+}
+
+#baru .one:hover .details {
+  cursor: pointer;
+  background-color: rgba(245, 178, 178, 0.7);
+}
+
+#baru .one .details button {
+  display: inline-block;
+  font-size: 19px;
+  font-weight: 500;
+  color: rgb(0, 16, 233);
+  background: none;
+  text-transform: uppercase;
+  border-bottom: 1px solid #2a2a2a;
+  padding: 2.5px;
+  transform: translateY(70px);
+  transition: 0.3s ease;
+}
+
+#baru .one .details button:hover {
+  color: #fff;
+  border-bottom: 1px solid #fff;
+}
+
+#baru .one:nth-child(1) .details {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: start;
+  color: #d8d8d8;
+}
+
+#baru .one:nth-child(2) .details {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: #d8d8d8;
+}
+
+#baru .one:nth-child(3) .details {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: end;
+  color: #d8d8d8;
+}
+
+.product {
+  cursor: pointer;
+  margin-bottom: 2rem;
+}
+
+.product img {
+  transition: 0.3s all;
+}
+
+.product:hover img {
+  opacity: 0.7;
+}
+
+.product .buy-btn {
+  background: #fb774b;
+  transform: translateY(20px);
+  opacity: 0;
+  transition: 0.3s all;
+}
+
+.product:hover .buy-btn {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+footer {
+  background-color: #000000;
+}
+footer h5 {
+  color: #d8d8d8;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+footer li a:hover {
+  color: #999;
+}
+
+footer p {
+  color: #999;
+  font-size: 0.8rem;
+}
+
+footer .copyright a {
+  color: #000;
+  width: 38px;
+  height: 38px;
+  background-color: #fff;
+  display: inline-block;
+  text-align: center;
+  line-height: 38px;
+  transition: 0.3s ease;
+  margin: 0 5px;
+}
+
+footer .copyright a:hover {
+  color: #fff;
+  background-color: #fb774b;
+}
+
+.card {
+  border: solid;
+  border-width: 2px;
+  border-bottom-color: #424242;
+  border-right-color: #424242;
+  border-left-color: #fff;
+  border-top-color: #fff;
+  background: #c0c0c0;
+  color: #212529;
+  z-index: 9999;
+}
+
+.card-header {
+  background-color: #08216b;
+  color: #fff;
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: inherit;
+  padding-top: 2px;
+  padding-bottom: 1px;
+  text-align: left;
+}
+
+.card-header.icon {
+  padding-left: 4px;
+}
+
+.modal-content {
+  box-shadow: 1px 1px 0 0 #424242;
+  border: 1px solid #fff;
+  border-right-color: #848484;
+  border-bottom-color: #848484;
+  background: silver;
+  padding: 2px;
+}
+
+.modal-header {
+  height: 32px;
+  background-color: #08216b;
+  color: white;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+.modal-header .btn {
+  margin-top: 5px;
+  padding-bottom: 10px;
+  height: 22px;
+  width: 22px;
+}
+
+.modal-header .btn span {
+  font-family: arial;
+  position: absolute;
+  top: 4.5px;
+  right: 12.2px;
+}
+
+.modal-title {
+  padding-top: 2px;
+  padding-bottom: 1px;
+}
+.welcome {
+  margin-top: 5%;
+  margin-bottom: 55px;
+}
+
+.welcome .card .card-body img {
+  width: 100%;
+  height: auto;
+  background-size: cover;
+}
+
+.welcome .card-body p {
+  font-size: 1.3rem;
+}
+
+hr {
+  border-bottom: 1px solid #212529;
+}
+
+.move {
+  position: relative;
+  animation-name: example;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-delay: 0ms;
+}
+
+@keyframes example {
+  0% {
+    left: 0px;
+    top: 0px;
+  }
+  5% {
+    left: 10px;
+    top: 0px;
+  }
+  10% {
+    left: 15px;
+    top: 0px;
+  }
+  15% {
+    left: 15px;
+    top: 0px;
+  }
+  20% {
+    left: 10px;
+    top: 0px;
+  }
+  25% {
+    left: 0px;
+    top: 0px;
+  }
+  30% {
+    left: 0px;
+    top: 0px;
+  }
+  35% {
+    left: -10px;
+    top: 0px;
+  }
+  40% {
+    left: -15px;
+    top: 0px;
+  }
+  45% {
+    left: -15px;
+    top: 0px;
+  }
+  50% {
+    left: -10px;
+    top: 0px;
+  }
+  55% {
+    left: 0px;
+    top: 0px;
+  }
+}
